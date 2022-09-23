@@ -1,0 +1,436 @@
+body {
+
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+    color: hsl(225, 20%, 60%);
+    background-color: hsl(230, 100%, 99%);
+    background: url(./images/bg-pattern.svg);
+    background-repeat:no-repeat;
+    
+}
+
+main {
+
+    width: 345px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+ 
+}
+
+
+#pattern {
+
+    position: absolute;
+    left: 105px;
+    top: 40px;
+    width: 155px;
+    z-index: -10;
+
+}
+
+h1 {
+
+font-size: 1.4em;
+color:hsl(227, 35%, 25%);
+margin-top: 75px;
+
+
+}
+
+
+
+h2 {
+
+    font-size: .85em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 35px;
+}
+
+.slider-main {
+    padding-top: 25px;
+    padding-bottom: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    
+}
+
+  
+ 
+#trial {
+
+    line-height: 27px;
+    font-size: .95em;
+    
+}
+
+#cost {
+
+    font-size: 2.3em;
+    font-weight: 800;
+    color: hsl(227, 35%, 25%);
+    margin-left: 0px;
+}
+
+#discount {
+
+    font-size: .65em;
+    font-weighT: 800;
+    color: hsl(15, 100%, 70%);
+    background-color: hsl(14, 92%, 95%);
+    padding: 3px 6px 3px 6px;
+    border-radius: 25px;
+}
+
+small {
+
+    font-size: 1em;
+    vertical-align: 7px;
+    margin-left: 10px;
+    
+
+}
+
+.card-container {
+
+    border-radius: 10px;
+    margin-top: 75px;
+    box-shadow: 0 1.5rem 1.5rem 0.5rem hsl(237 63% 64% / 0.1);
+    background-color: white;
+
+}
+
+.toggle-container {
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: 35px;
+}
+
+.toggle-text {
+
+    font-size: .75em;
+}
+
+.content-container {
+
+border-top: 1px solid hsl(226, 100%, 93%);
+padding-top: 35px;
+padding-bottom: 35px;
+    
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 12px 47px 12px 47px;
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(227, 35%, 25%);
+    font-family: 'Manrope', sans-serif;
+    color: hsl(226, 100%, 87%);
+    transition: .15s ease;
+    font-size: .75em;
+    
+    
+}
+
+.btn:hover {
+
+    color: white;
+    cursor: pointer;
+}
+
+.content-child {
+
+    line-height: 27px;
+    font-size: .75em;
+    
+    
+}
+
+.content-child img {
+
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 11px;
+    
+}
+
+/* Billing - toggle */
+
+
+
+.switch {
+
+    height: 22px;
+    width: 43px;
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.switch input {
+
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(224, 40%, 87%);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+    
+
+}
+
+
+
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:hover + .slider {
+
+    background-color: hsl(174, 86%, 45%);
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+  }
+
+
+/* Range slider */
+  
+
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    width: 100%;
+    height: 8px;
+  
+    background: linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) 50%,
+                hsl(224, 65%, 95%) 50%, hsl(224, 65%, 95%) 100%);
+    border-radius: 9px;
+    
+    cursor: pointer;
+  }
+
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+  
+    border-radius: 9px;
+  
+    cursor: pointer;
+  }
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  
+    width: 40px;
+    height: 40px;
+    margin-top: -16px;
+  
+    background-color: hsl(174, 86%, 45%);
+    background-image: url("./images/icon-slider.svg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    box-shadow: 0px 17px 17px 7px hsl(224, 65%, 95%);
+  
+    cursor: grab;
+  
+    transition: background-color 300ms ease-in-out;
+  }
+
+  input[type=range]::-webkit-slider-thumb:active {
+    background-color: #0caa9b !important;
+  
+    cursor: grabbing;
+  }
+  
+
+
+  input[type=range]::-webkit-slider-thumb:hover {
+    background-color: #57e1d4;
+  }
+
+  #discount-text {
+
+    display: none;
+  }
+
+  /* Media Queries */
+
+
+  @media screen and (min-width: 1000px) {
+
+
+    body {
+
+        background-image: url(./images/bg-pattern.svg),url(./images/bg-pattern.svg);
+        background-position:
+      left top,
+      1200px top,
+      2400px top;
+  
+
+    }
+
+    .content-container {
+    
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 45px 25px 45px;
+        
+    }
+
+    .btn {
+
+       margin: 0; 
+    }
+
+    h1 {
+
+        font-size: 1.8em;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+
+    #trial {
+
+        
+    }
+
+    h2 {
+
+        text-align: left;
+        padding-left: 45px;
+        margin-top: 60px;
+    }
+    
+    #list-content {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    
+    
+    main {
+    
+        width: 541px;
+        
+    }
+
+    .card-container {
+
+        position: relative;
+        margin-top: 90px;
+    }
+    
+    
+    .toggle-container {
+    
+        justify-content:center;
+        margin-right: 0;
+        margin-left: 85px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        
+    }
+
+    #discount {
+
+        margin-left: 5px;
+    }
+
+    #discount-text {
+
+        display: inline-block;
+        margin-left: 3px;
+    }
+    .content-child img {
+
+        padding-left: 0;
+    }
+
+    .slider-main {
+
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 45px;
+        
+    }
+
+    .price-container {
+
+        position: absolute;
+        top: 40px;
+        
+        right: 50px;
+    }
+
+    small {
+
+        margin-left: 5px;
+    }
+    
+    #br {
+
+        display: none;
+    }
+
+    #pattern {
+
+        left: 195px;
+        top: 65px;
+        width: 150px;
+    }
+
+    }
+    
+    
