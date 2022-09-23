@@ -45,7 +45,7 @@ margin-top: 75px;
 
 h2 {
 
-    font-size: .85em;
+    font-size: .8em;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 600;
@@ -72,7 +72,7 @@ h2 {
 
 #cost {
 
-    font-size: 2.3em;
+    font-size: 2.1em;
     font-weight: 800;
     color: hsl(227, 35%, 25%);
     margin-left: 0px;
@@ -389,7 +389,7 @@ input[type=range]::-webkit-slider-thumb {
 
         text-align: left;
         padding-left: 45px;
-        margin-top: 60px;
+        margin-top: 57px;
     }
     
     #list-content {
